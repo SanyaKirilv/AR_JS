@@ -17,14 +17,12 @@
             gesture-detector
         >
             <a-nft
-                id="animated-marker"
                 type="nft"
-                preset="custom"
                 url="assets/markers/БПЛА_ВВП_SWAN"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5"
             >
                 <a-image
                     src="assets/sourse/asset.png"
